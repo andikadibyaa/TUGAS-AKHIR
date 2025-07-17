@@ -4,7 +4,7 @@ An AI-powered drowsiness detection system that uses computer vision and machine 
 
 ## 🚀 Demo
 
-- **Live Demo**: [https://deploy-skripsi.vercel.app/](https://deploy-skripsi.vercel.app/)
+- **Live Demo**: [https://jagamudi.vercel.app/](https://jagamudi.vercel.app/)
 - **Model Repository**: [https://huggingface.co/andikadibya/Jagamudi](https://huggingface.co/andikadibya/Jagamudi/tree/main)
 
 ## 📋 Key Features
