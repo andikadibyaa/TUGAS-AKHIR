@@ -35,7 +35,6 @@ An AI-powered drowsiness detection system that uses computer vision and machine 
 ### Model & Data
 - **Custom CNN Model** - Neural network model for drowsiness classification
 - **Haar Cascade Classifiers** - Face and eye detection
-- **ResNet50** - Transfer learning for feature extraction
 
 ## 📁 Project Structure
 
@@ -55,7 +54,7 @@ Deploy-Skripsi/
 ├── models/                     # ML model files
 ├── public/                     # Static assets
 ├── haarcascade_*.xml          # OpenCV cascade files
-├── resnet50_fine_tune.h5      # Trained model
+├── model.h5      # Trained model
 ├── requirements.txt           # Python dependencies
 └── package.json              # Node.js dependencies
 ```
@@ -88,7 +87,7 @@ pip install -r requirements.txt
 ### 3. Download Model Files
 Model files are available at [Hugging Face Repository](https://huggingface.co/andikadibya/Jagamudi/tree/main):
 
-- `resnet50_fine_tune.h5` - Main model for drowsiness detection
+- `model.h5` - Main model for drowsiness detection
 - Haar cascade files (already included in repo)
 
 ### 4. Setup Environment
