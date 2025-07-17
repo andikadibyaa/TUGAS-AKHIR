@@ -1,43 +1,43 @@
-# Jagamudi - Sistem Deteksi Kantuk Real-time
+# Jagamudi - Real-time Drowsiness Detection System
 
-Sistem deteksi kantuk berbasis AI yang menggunakan teknologi computer vision dan machine learning untuk memantau kondisi mata pengemudi secara real-time. Dirancang untuk meningkatkan keselamatan berkendara dengan memberikan peringatan dini ketika terdeteksi tanda-tanda kantuk.
+An AI-powered drowsiness detection system that uses computer vision and machine learning technologies to monitor driver's eye condition in real-time. Designed to enhance driving safety by providing early warnings when drowsiness signs are detected.
 
 ## 🚀 Demo
 
 - **Live Demo**: [https://deploy-skripsi.vercel.app/](https://deploy-skripsi.vercel.app/)
 - **Model Repository**: [https://huggingface.co/andikadibya/Jagamudi](https://huggingface.co/andikadibya/Jagamudi/tree/main)
 
-## 📋 Fitur Utama
+## 📋 Key Features
 
-- ✅ **Real-time Detection** - Deteksi kantuk secara real-time menggunakan webcam
-- ✅ **Video Upload Analysis** - Analisis video yang sudah direkam untuk deteksi kantuk
-- ✅ **Audio Alarm System** - Sistem peringatan suara otomatis
-- ✅ **Responsive Design** - Antarmuka yang responsif untuk berbagai perangkat
-- ✅ **Statistics Tracking** - Pelacakan statistik dan riwayat deteksi
-- ✅ **Offline Capable** - Dapat berjalan secara offline setelah halaman dimuat
+- ✅ **Real-time Detection** - Real-time drowsiness detection using webcam
+- ✅ **Video Upload Analysis** - Analyze pre-recorded videos for drowsiness detection
+- ✅ **Audio Alarm System** - Automatic audio warning system
+- ✅ **Responsive Design** - Responsive interface for various devices
+- ✅ **Statistics Tracking** - Detection statistics and history tracking
+- ✅ **Offline Capable** - Works offline after initial page load
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
 ### Frontend
-- **Next.js** & **React** - Framework web modern
+- **Next.js** & **React** - Modern web framework
 - **TypeScript** - Type-safe JavaScript
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Icon library
-- **Radix UI** - Komponen UI yang accessible
+- **Radix UI** - Accessible UI components
 
 ### Backend & AI
-- **Python** - Bahasa pemrograman untuk backend
-- **Flask** - Web framework Python
+- **Python** - Backend programming language
+- **Flask** - Python web framework
 - **TensorFlow** & **Keras** - Machine learning framework
 - **OpenCV** - Computer vision library
 - **NumPy** - Numerical computing
 
 ### Model & Data
-- **Custom CNN Model** - Model neural network untuk klasifikasi kantuk
-- **Haar Cascade Classifiers** - Deteksi wajah dan mata
-- **ResNet50** - Transfer learning untuk feature extraction
+- **Custom CNN Model** - Neural network model for drowsiness classification
+- **Haar Cascade Classifiers** - Face and eye detection
+- **ResNet50** - Transfer learning for feature extraction
 
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
 ```
 Deploy-Skripsi/
@@ -60,12 +60,12 @@ Deploy-Skripsi/
 └── package.json              # Node.js dependencies
 ```
 
-## 🚀 Instalasi dan Setup
+## 🚀 Installation and Setup
 
 ### Prerequisites
-- **Node.js** (v18 atau lebih tinggi)
-- **Python** (v3.8 atau lebih tinggi)
-- **npm** atau **yarn**
+- **Node.js** (v18 or higher)
+- **Python** (v3.8 or higher)
+- **npm** or **yarn**
 
 ### 1. Clone Repository
 ```bash
@@ -86,14 +86,14 @@ pip install -r requirements.txt
 ```
 
 ### 3. Download Model Files
-Model files tersedia di [Hugging Face Repository](https://huggingface.co/andikadibya/Jagamudi/tree/main):
+Model files are available at [Hugging Face Repository](https://huggingface.co/andikadibya/Jagamudi/tree/main):
 
-- `resnet50_fine_tune.h5` - Model utama untuk deteksi kantuk
-- Haar cascade files (sudah termasuk dalam repo)
+- `resnet50_fine_tune.h5` - Main model for drowsiness detection
+- Haar cascade files (already included in repo)
 
 ### 4. Setup Environment
 ```bash
-# Buat file .env.local (opsional)
+# Create .env.local file (optional)
 cp .env.example .env.local
 ```
 
@@ -104,17 +104,17 @@ cp .env.example .env.local
 # Terminal 1: Frontend
 npm run dev
 
-# Terminal 2: Backend (jika diperlukan untuk development lokal)
+# Terminal 2: Backend (if needed for local development)
 python scripts/api.py
 ```
 
 #### Production Mode
 ```bash
 npm run build
-npm run start
+npm start
 ```
 
-## 🔧 Konfigurasi
+## 🔧 Configuration
 
 ### Environment Variables
 ```env
@@ -124,31 +124,31 @@ NODE_ENV=development
 ```
 
 ### Model Configuration
-Model configuration dapat disesuaikan di `scripts/drowsiness_detector.py`:
-- Threshold deteksi kantuk
-- Sensitivitas alarm
-- Parameter cascade classifier
+Model configuration can be adjusted in `scripts/drowsiness_detector.py`:
+- Drowsiness detection threshold
+- Alarm sensitivity
+- Cascade classifier parameters
 
-## 📖 Cara Penggunaan
+## 📖 Usage Guide
 
 ### 1. Real-time Detection
-1. Klik tab "Real-time Detection"
-2. Izinkan akses webcam
-3. Posisikan wajah di depan kamera
-4. Sistem akan secara otomatis mendeteksi kantuk
-5. Alarm akan berbunyi jika kantuk terdeteksi
+1. Click "Real-time Detection" tab
+2. Allow webcam access
+3. Position your face in front of the camera
+4. System will automatically detect drowsiness
+5. Alarm will sound when drowsiness is detected
 
 ### 2. Video Analysis
-1. Klik tab "Upload Video"
-2. Pilih file video (MP4, AVI, MOV)
-3. Klik "Analisis Video"
-4. Tunggu proses analisis selesai
-5. Lihat hasil deteksi dan statistik
+1. Click "Upload Video" tab
+2. Select video file (MP4, AVI, MOV)
+3. Click "Analyze Video"
+4. Wait for analysis to complete
+5. View detection results and statistics
 
-### 3. Tips Keselamatan
-- Akses menu "Tips" untuk panduan mencegah kantuk
-- Baca FAQ untuk informasi teknis
-- Ikuti best practices untuk hasil deteksi optimal
+### 3. Safety Tips
+- Access "Tips" menu for drowsiness prevention guidelines
+- Read FAQ for technical information
+- Follow best practices for optimal detection results
 
 ## 🎯 API Endpoints
 
@@ -187,7 +187,7 @@ python -m pytest scripts/test_api.py
 
 ### Setup Verification
 ```bash
-# Verifikasi setup
+# Verify setup
 bash scripts/setup.sh
 
 # Test setup
@@ -196,33 +196,33 @@ node scripts/test-setup.sh
 
 ## 📊 Performance
 
-- **Real-time Processing**: ~30 FPS pada hardware modern
-- **Model Accuracy**: >90% pada kondisi pencahayaan optimal
-- **Response Time**: <100ms untuk deteksi per frame
-- **Memory Usage**: ~500MB RAM untuk model dan processing
+- **Real-time Processing**: ~30 FPS on modern hardware
+- **Model Accuracy**: >90% under optimal lighting conditions
+- **Response Time**: <100ms for per-frame detection
+- **Memory Usage**: ~500MB RAM for model and processing
 
 ## 🔒 Privacy & Security
 
-- **Data Privacy**: Tidak ada data video yang disimpan di server
-- **Local Processing**: Semua pemrosesan dilakukan di perangkat pengguna
-- **Secure Communication**: HTTPS untuk semua komunikasi
-- **No Tracking**: Tidak ada pelacakan pengguna atau data analytics
+- **Data Privacy**: No video data stored on server
+- **Local Processing**: All processing done on user's device
+- **Secure Communication**: HTTPS for all communications
+- **No Tracking**: No user tracking or data analytics
 
 ## 🤝 Contributing
 
-Kontribusi sangat diterima! Silakan:
+Contributions are welcome! Please:
 
-1. Fork repository
-2. Buat feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit perubahan (`git commit -m 'Add amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Buat Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Create a Pull Request
 
 ### Development Guidelines
-- Ikuti TypeScript strict mode
-- Gunakan ESLint dan Prettier
-- Tulis unit tests untuk fitur baru
-- Update dokumentasi jika diperlukan
+- Follow TypeScript strict mode
+- Use ESLint and Prettier
+- Write unit tests for new features
+- Update documentation when needed
 
 ## 📝 License
 
@@ -244,9 +244,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📞 Support
 
-Jika ada pertanyaan atau masalah:
-- Buka [GitHub Issues](https://github.com/andikadibyaa/Deploy-Skripsi/issues)
-- Hubungi melalui LinkedIn
+If you have questions or issues:
+- Open [GitHub Issues](https://github.com/andikadibyaa/Deploy-Skripsi/issues)
+- Contact via LinkedIn
 - Email: [contact email]
 
 ## 🔄 Changelog
@@ -260,6 +260,6 @@ Jika ada pertanyaan atau masalah:
 
 ---
 
-⭐ Jika project ini membantu, berikan star di GitHub!
+⭐ If this project helps you, give it a star on GitHub!
 
 **Repository**: [https://github.com/andikadibyaa/Deploy-Skripsi](https://github.com/andikadibyaa/Deploy-Skripsi)
